@@ -30,7 +30,7 @@ This project showcases the frontend implementation of Inbank's Hire Purchase loa
 
 ## 🎯 About the Project
 
-This is a technical implementation of Rock Gomes' product design work for Inbank's Hire Purchase loan application flow. As Inbank's first in-house Product Designer, Rock led the end-to-end UX/UI redesign, creating an accessible and scalable experience across multiple markets.
+This is a technical implementation of my product design work for Inbank's Hire Purchase loan application flow. As Inbank's first in-house Product Designer, I led the end-to-end UX/UI redesign, creating an accessible and scalable experience across multiple markets.
 
 This repository demonstrates:
 
