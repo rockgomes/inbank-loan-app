@@ -4,6 +4,7 @@ import { IdentityVerificationPage } from "./pages/IdentityVerificationPage";
 import { PersonalDetailsPage } from "./pages/PersonalDetailsPage";
 import { DecisionPage } from "./pages/DecisionPage";
 import { LoanOfferPage } from "./pages/LoanOfferPage";
+import { SigningPage } from "./pages/SigningPage";
 
 export function AppRoutes() {
   return (
@@ -13,6 +14,7 @@ export function AppRoutes() {
       <Route path="/identity" element={<IdentityVerificationPage />} />
       <Route path="/personal-details" element={<PersonalDetailsPage />} />
       <Route path="/decision" element={<DecisionPage />} />
+      <Route path="/signing" element={<SigningPage />} />
     </Routes>
   );
 }
