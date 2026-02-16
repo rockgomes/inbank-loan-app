@@ -1,25 +1,28 @@
-import { PageLayout } from '../../components/layout/PageLayout';
-import { PageTitle } from '../../components/layout/PageTitle';
-import { Card } from '../../components/ui/Card';
-import styles from './DecisionPage.module.css';
+import { PageLayout } from "../../components/layout/PageLayout";
+import { PageTitle } from "../../components/layout/PageTitle";
+import { Card } from "../../components/ui/Card";
+import styles from "./DecisionPage.module.css";
 
 export function DecisionPage() {
   return (
     <PageLayout>
       <div className={styles.content}>
         <PageTitle
-          title="Processing your application"
-          subtitle="Please wait while we review your information."
+          titleItalic="Please"
+          title=" wait"
+          subtitle="We're reviewing your application."
         />
 
         <Card variant="default" padding="small" radius="lg" gap>
           <div className={styles.cardContent}>
-            <div className={styles.spinner}>
-              <div className={styles.spinnerCircle} />
+            <div className={styles.loader}>
+              <p className={styles.loaderText}>One moment…</p>
+              <div className={styles.dots}>
+                <span className={styles.dot} />
+                <span className={styles.dot} />
+                <span className={styles.dot} />
+              </div>
             </div>
-            <p className={styles.message}>
-              We're analyzing your application. This usually takes just a few moments.
-            </p>
           </div>
         </Card>
       </div>
