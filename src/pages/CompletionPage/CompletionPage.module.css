@@ -50,7 +50,9 @@
 .illustration {
   width: 100%;
   max-width: 420px;
-  margin: var(--spacing-xl) 0;
+  margin: var(--spacing-xl) auto;
+  display: flex;
+  justify-content: center;
 }
 
 .illustrationImage {
