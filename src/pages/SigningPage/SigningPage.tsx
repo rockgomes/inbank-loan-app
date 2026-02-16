@@ -12,7 +12,7 @@ export function SigningPage() {
   useEffect(() => {
     const timer = setTimeout(() => {
       navigate("/end");
-    }, 2000);
+    }, 4000);
 
     return () => clearTimeout(timer);
   }, [navigate]);
