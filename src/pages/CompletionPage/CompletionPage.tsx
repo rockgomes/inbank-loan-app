@@ -5,7 +5,8 @@ import { Button } from "../../components/ui/Button";
 import { Icon } from "../../components/ui/Icon";
 import styles from "./CompletionPage.module.css";
 
-const illustrationImage = "https://www.figma.com/api/mcp/asset/96eed0cf-1345-4462-b876-250d23ae6b06";
+const illustrationImage =
+  "https://www.figma.com/api/mcp/asset/96eed0cf-1345-4462-b876-250d23ae6b06";
 
 export function CompletionPage() {
   const handleDownloadContract = () => {
@@ -19,9 +20,11 @@ export function CompletionPage() {
   return (
     <PageLayout>
       <div className={styles.content}>
-        <PageTitle titleItalic="You're" title=" all set!" />
-        <p className={styles.subtitle}>Thank you for shopping with Inbank.</p>
-
+        <PageTitle
+          titleItalic="You're"
+          title=" all set!"
+          subtitle="Thank you for shopping with Inbank."
+        />
         <Card variant="default" padding="small" radius="lg" gap>
           <div className={styles.cardContent}>
             <p className={styles.instructions}>
@@ -42,19 +45,19 @@ export function CompletionPage() {
               Download signed contract
             </Button>
 
-            <div className={styles.illustration}>
-              <img
-                src={illustrationImage}
-                alt="Success illustration"
-                className={styles.illustrationImage}
-              />
-            </div>
-
             <Button variant="filled" fullWidth onClick={handleBackToMerchant}>
               Back to merchant
             </Button>
           </div>
         </Card>
+
+        <div className={styles.illustration}>
+          <img
+            src={illustrationImage}
+            alt="Success illustration"
+            className={styles.illustrationImage}
+          />
+        </div>
       </div>
     </PageLayout>
   );
