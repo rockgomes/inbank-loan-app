@@ -5,6 +5,7 @@ import { PersonalDetailsPage } from "./pages/PersonalDetailsPage";
 import { DecisionPage } from "./pages/DecisionPage";
 import { LoanOfferPage } from "./pages/LoanOfferPage";
 import { SigningPage } from "./pages/SigningPage";
+import { CompletionPage } from "./pages/CompletionPage";
 
 export function AppRoutes() {
   return (
@@ -15,6 +16,7 @@ export function AppRoutes() {
       <Route path="/personal-details" element={<PersonalDetailsPage />} />
       <Route path="/decision" element={<DecisionPage />} />
       <Route path="/signing" element={<SigningPage />} />
+      <Route path="/completion" element={<CompletionPage />} />
     </Routes>
   );
 }

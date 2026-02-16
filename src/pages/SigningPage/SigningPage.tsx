@@ -11,7 +11,7 @@ export function SigningPage() {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      navigate("/end");
+      navigate("/completion");
     }, 4000);
 
     return () => clearTimeout(timer);
