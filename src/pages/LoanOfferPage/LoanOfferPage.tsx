@@ -13,9 +13,7 @@ export function LoanOfferPage() {
   // Mock data - will be replaced with actual data from context later
   const offerData = {
     monthlyPayment: 12.64,
-    downPayment: 50.0,
     loanAmount: 500.0,
-    financedAmount: 500.0,
   };
 
   const loanDetails = [
@@ -56,9 +54,7 @@ export function LoanOfferPage() {
           <div className={styles.cardContent}>
             <LoanOfferCard
               monthlyPayment={offerData.monthlyPayment}
-              downPayment={offerData.downPayment}
               loanAmount={offerData.loanAmount}
-              financedAmount={offerData.financedAmount}
             />
 
             <div className={styles.loanDetails}>

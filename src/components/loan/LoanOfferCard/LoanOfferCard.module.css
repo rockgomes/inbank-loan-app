@@ -7,6 +7,7 @@
   background-color: #f8fffc;
   border: 1px solid #53cba0;
   border-radius: var(--border-radius-md);
+  width: 100%;
 }
 
 .checkmark {
@@ -23,10 +24,16 @@
   gap: 30px;
 }
 
+.singleSection {
+  display: flex;
+  flex-direction: column;
+}
+
 .field {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  text-align: left;
 }
 
 .label {
