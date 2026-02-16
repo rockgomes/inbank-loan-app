@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  display: block;
+  height: 40px;
+  width: auto;
+  color: var(--color-primary-night-violet);
+}
+
+.logo path {
+  fill: currentColor;
+}
+
+/* Variant: full - always show full logo */
+.full .logo {
+  display: block;
+}
+
+/* Variant: small - always show small logo */
+.small .logo {
+  display: block;
+}
+
+/* Variant: responsive - show full on desktop, small on mobile */
+.responsive .logoFull {
+  display: block;
+}
+
+.responsive .logoSmall {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .logo {
+    height: 32px;
+  }
+
+  .responsive .logoFull {
+    display: none;
+  }
+
+  .responsive .logoSmall {
+    display: block;
+  }
+}

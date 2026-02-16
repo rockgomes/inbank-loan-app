@@ -1,0 +1,67 @@
+:root {
+  /* Colors - Primary */
+  --color-primary-night-violet: #21093a;
+  --color-primary-white: #ffffff;
+
+  /* Colors - Secondary */
+  --color-secondary-light-lavender: #e3d2ff;
+  --color-secondary-light-lavender-light: #f5f0ff;
+  --color-secondary-almost-white: #f0f0ea;
+
+  /* Colors - Grey */
+  --color-grey-2: #606060;
+  --color-grey-3: #757575;
+  --color-grey-4: #dedede;
+
+  /* Colors - Background */
+  --color-background-pampas: #fbfaf9;
+
+  /* Colors - Text */
+  --color-text-tundora: #413c3c;
+
+  /* Colors - Status */
+  --color-status-error: #d64545;
+  --color-status-error-bg: #fdf2f2;
+  --color-status-success: #10b981;
+  --color-status-success-bg: #e8f8f3;
+
+  /* Typography - Font Families */
+  --font-family-heading: "Besley", serif;
+  --font-family-body: "Inter", sans-serif;
+
+  /* Typography - Font Weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+
+  /* Typography - Font Sizes */
+  --font-size-xs: 14px;
+  --font-size-sm: 16px;
+  --font-size-md: 18px;
+  --font-size-lg: 28px;
+  --font-size-xl: 48px;
+
+  /* Typography - Line Heights */
+  --line-height-xs: 20px;
+  --line-height-sm: 24px;
+  --line-height-md: 28px;
+  --line-height-lg: 30px;
+  --line-height-xl: 56px;
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 30px;
+  --spacing-2xl: 40px;
+  --spacing-3xl: 60px;
+
+  /* Border Radius */
+  --border-radius-sm: 8px;
+  --border-radius-md: 18px;
+  --border-radius-lg: 30px;
+  --border-radius-full: 100px;
+
+  /* Shadows */
+  --shadow-card: 0px 0px 40px 0px rgba(0, 0, 0, 0.04);
+}

@@ -1,0 +1,78 @@
+.loanSummaryCard {
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.monthlyPaymentSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.monthlyPaymentValue {
+  display: flex;
+  align-items: baseline;
+  gap: var(--spacing-sm);
+  flex-wrap: wrap;
+}
+
+.amount {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-lg);
+  color: var(--color-primary-night-violet);
+}
+
+.multiplier {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-xs);
+  color: var(--color-primary-night-violet);
+}
+
+.period {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-xs);
+  color: var(--color-primary-night-violet);
+}
+
+.period strong {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-lg);
+}
+
+.detailsRow {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-xl);
+}
+
+.downPaymentValue {
+  display: flex;
+  align-items: baseline;
+  gap: var(--spacing-xs);
+}
+
+.percentage {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-xs);
+  color: var(--color-primary-night-violet);
+}
+
+@media (max-width: 767px) {
+  .detailsRow {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+}

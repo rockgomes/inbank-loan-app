@@ -1,0 +1,81 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-sm);
+  cursor: pointer;
+  position: relative;
+}
+
+.input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.checkmark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  border: 1px solid var(--color-grey-4);
+  border-radius: 4px;
+  background-color: var(--color-primary-white);
+  transition: all 0.2s ease;
+  margin-top: 2px;
+  cursor: pointer;
+}
+
+.checkmark svg {
+  opacity: 0;
+  color: var(--color-primary-white);
+  transition: opacity 0.2s ease;
+}
+
+.input:checked + .checkmark {
+  background-color: var(--color-primary-night-violet);
+  border-color: var(--color-primary-night-violet);
+}
+
+.input:checked + .checkmark svg {
+  opacity: 1;
+}
+
+.input:focus-visible + .checkmark {
+  outline: 2px solid var(--color-secondary-light-lavender);
+  outline-offset: 2px;
+}
+
+.error .checkmark {
+  border-color: var(--color-status-error);
+}
+
+.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.disabled .checkmark {
+  background-color: var(--color-background-pampas);
+}
+
+.label {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-xs);
+  color: var(--color-primary-night-violet);
+  cursor: pointer;
+  text-align: left;
+}
+
+.label a {
+  color: var(--color-primary-night-violet);
+  text-decoration: underline;
+}
+
+.disabled .label {
+  cursor: not-allowed;
+}

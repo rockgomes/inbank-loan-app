@@ -1,0 +1,120 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.inputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: 16px;
+  border: 1px solid var(--color-grey-4);
+  border-radius: var(--border-radius-sm);
+  background-color: var(--color-primary-white);
+  transition: border-color 0.2s ease;
+}
+
+.inputWrapper:focus-within {
+  border-color: var(--color-primary-night-violet);
+}
+
+.inputWrapper.error {
+  border-color: var(--color-status-error);
+}
+
+.inputWrapper.disabled {
+  background-color: var(--color-background-pampas);
+  cursor: not-allowed;
+}
+
+.input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-sm);
+  color: var(--color-primary-night-violet);
+  padding: 0;
+  width: 100%;
+}
+
+.input::placeholder {
+  color: var(--color-grey-3);
+}
+
+.input:disabled {
+  cursor: not-allowed;
+  color: var(--color-grey-3);
+}
+
+.label {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-sm);
+  color: var(--color-grey-3);
+  pointer-events: none;
+  transition: all 0.2s ease;
+  background-color: var(--color-primary-white);
+  padding: 0 4px;
+}
+
+.hasPrefix .label {
+  left: 16px;
+}
+
+.input:focus + .label,
+.hasValue .label,
+.input:not(:placeholder-shown) + .label {
+  top: 0;
+  left: 16px;
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-xs);
+  color: var(--color-primary-night-violet);
+}
+
+.error .label {
+  color: var(--color-status-error);
+}
+
+.disabled .label {
+  background-color: var(--color-background-pampas);
+}
+
+.prefix,
+.suffix {
+  display: flex;
+  align-items: center;
+  color: var(--color-grey-2);
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-sm);
+}
+
+.errorText {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-xs);
+  color: var(--color-status-error);
+  text-align: left;
+}
+
+.helperText {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-xs);
+  color: var(--color-grey-3);
+  text-align: left;
+}
