@@ -8,7 +8,8 @@ export type IconName =
   | "file-text"
   | "download"
   | "x"
-  | "help-circle";
+  | "help-circle"
+  | "check";
 export type IconSize = "sm" | "md" | "lg";
 
 export interface IconProps extends Omit<
@@ -27,6 +28,7 @@ const iconMap: Record<IconName, () => ReactNode> = {
   download: icons.DownloadIcon,
   x: icons.XIcon,
   "help-circle": icons.HelpCircleIcon,
+  check: icons.CheckIcon,
 };
 
 export function Icon({
