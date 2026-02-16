@@ -23,6 +23,7 @@
   grid-template-columns: repeat(2, 1fr);
   gap: var(--spacing-xl);
   width: 100%;
+  padding-left: var(--spacing-2xl);
 }
 
 .detailField {
