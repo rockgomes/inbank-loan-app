@@ -1,21 +1,21 @@
-import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { PageLayout } from '../../components/layout/PageLayout';
-import { PageTitle } from '../../components/layout/PageTitle';
-import { Card } from '../../components/ui/Card';
-import { Button } from '../../components/ui/Button';
-import { Icon } from '../../components/ui/Icon';
-import { ContactDetailsCard } from '../../components/loan/ContactDetailsCard';
-import { AdditionalInfoSection } from '../../components/loan/AdditionalInfoSection';
-import { ComplianceCheckboxes } from '../../components/loan/ComplianceCheckboxes';
-import { useLoanFlow } from '../../contexts/LoanFlowContext';
-import styles from './PersonalDetailsPage.module.css';
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { PageLayout } from "../../components/layout/PageLayout";
+import { PageTitle } from "../../components/layout/PageTitle";
+import { Card } from "../../components/ui/Card";
+import { Button } from "../../components/ui/Button";
+import { Icon } from "../../components/ui/Icon";
+import { ContactDetailsCard } from "../../components/loan/ContactDetailsCard";
+import { AdditionalInfoSection } from "../../components/loan/AdditionalInfoSection";
+import { ComplianceCheckboxes } from "../../components/loan/ComplianceCheckboxes";
+import { useLoanFlow } from "../../contexts/LoanFlowContext";
+import styles from "./PersonalDetailsPage.module.css";
 
 const MOCK_CONTACT_DATA = {
-  name: 'Roque Gomes Paes de Brito',
-  email: 'emailnamehere@email.com',
-  phone: '+372 12345678',
-  address: 'Otsa tee 7-6, Rae vald RAE VALD 75304, HARJU MAAKOND',
+  name: "Timothy Berger Anderson",
+  email: "emailnamehere@email.com",
+  phone: "+372 12345678",
+  address: "Otsa tee 7-6, Rae vald RAE VALD 75304, HARJU MAAKOND",
 };
 
 export function PersonalDetailsPage() {
@@ -23,10 +23,10 @@ export function PersonalDetailsPage() {
   const { state, setFinancialDetails, setComplianceConsents } = useLoanFlow();
 
   const [monthlyIncome, setMonthlyIncome] = useState(
-    state.financialDetails?.monthlyIncome || '',
+    state.financialDetails?.monthlyIncome || "",
   );
   const [monthlyObligations, setMonthlyObligations] = useState(
-    state.financialDetails?.monthlyObligations || '',
+    state.financialDetails?.monthlyObligations || "",
   );
   const [complianceValues, setComplianceValues] = useState({
     noInfluence: state.complianceConsents?.noInfluence || false,
@@ -44,27 +44,33 @@ export function PersonalDetailsPage() {
     monthlyObligations: false,
   });
 
-  const validateFinancialField = (field: 'monthlyIncome' | 'monthlyObligations', value: string) => {
+  const validateFinancialField = (
+    field: "monthlyIncome" | "monthlyObligations",
+    value: string,
+  ) => {
     if (!value.trim()) {
-      return field === 'monthlyIncome' 
-        ? 'Monthly income is required' 
-        : 'Monthly obligations is required';
+      return field === "monthlyIncome"
+        ? "Monthly income is required"
+        : "Monthly obligations is required";
     }
     if (isNaN(Number(value)) || Number(value) < 0) {
-      return 'Please enter a valid number';
+      return "Please enter a valid number";
     }
     return undefined;
   };
 
   const handleIncomeBlur = () => {
     setTouched((prev) => ({ ...prev, monthlyIncome: true }));
-    const error = validateFinancialField('monthlyIncome', monthlyIncome);
+    const error = validateFinancialField("monthlyIncome", monthlyIncome);
     setFinancialErrors((prev) => ({ ...prev, monthlyIncome: error }));
   };
 
   const handleObligationsBlur = () => {
     setTouched((prev) => ({ ...prev, monthlyObligations: true }));
-    const error = validateFinancialField('monthlyObligations', monthlyObligations);
+    const error = validateFinancialField(
+      "monthlyObligations",
+      monthlyObligations,
+    );
     setFinancialErrors((prev) => ({ ...prev, monthlyObligations: error }));
   };
 
@@ -79,16 +85,23 @@ export function PersonalDetailsPage() {
   };
 
   const isFormValid = () => {
-    const incomeError = validateFinancialField('monthlyIncome', monthlyIncome);
-    const obligationsError = validateFinancialField('monthlyObligations', monthlyObligations);
-    const complianceValid = complianceValues.noInfluence && complianceValues.termsAccepted;
+    const incomeError = validateFinancialField("monthlyIncome", monthlyIncome);
+    const obligationsError = validateFinancialField(
+      "monthlyObligations",
+      monthlyObligations,
+    );
+    const complianceValid =
+      complianceValues.noInfluence && complianceValues.termsAccepted;
 
     return !incomeError && !obligationsError && complianceValid;
   };
 
   const handleContinue = () => {
-    const incomeError = validateFinancialField('monthlyIncome', monthlyIncome);
-    const obligationsError = validateFinancialField('monthlyObligations', monthlyObligations);
+    const incomeError = validateFinancialField("monthlyIncome", monthlyIncome);
+    const obligationsError = validateFinancialField(
+      "monthlyObligations",
+      monthlyObligations,
+    );
 
     setFinancialErrors({
       monthlyIncome: incomeError,
@@ -115,11 +128,11 @@ export function PersonalDetailsPage() {
 
     setComplianceConsents(complianceValues);
 
-    navigate('/decision');
+    navigate("/decision");
   };
 
   const handleBack = () => {
-    navigate('/identity');
+    navigate("/identity");
   };
 
   return (
@@ -147,7 +160,11 @@ export function PersonalDetailsPage() {
               onObligationsChange={setMonthlyObligations}
               onIncomeBlur={handleIncomeBlur}
               onObligationsBlur={handleObligationsBlur}
-              errors={touched.monthlyIncome || touched.monthlyObligations ? financialErrors : {}}
+              errors={
+                touched.monthlyIncome || touched.monthlyObligations
+                  ? financialErrors
+                  : {}
+              }
             />
 
             <ComplianceCheckboxes
@@ -178,7 +195,7 @@ export function PersonalDetailsPage() {
               The financial service is offered by AS Inbank. Before signing the
               contract, read the terms and conditions carefully and, if needed,
               consult an employee of Inbank or another specialist. More
-              information at{' '}
+              information at{" "}
               <a
                 href="https://inbank.ee"
                 target="_blank"
@@ -188,7 +205,7 @@ export function PersonalDetailsPage() {
               </a>
             </p>
             <p className={styles.disclaimer}>
-              Manage your cookie preferences in{' '}
+              Manage your cookie preferences in{" "}
               <a href="#cookie-settings">cookie settings</a>
             </p>
           </div>

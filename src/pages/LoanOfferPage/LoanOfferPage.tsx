@@ -27,8 +27,7 @@ export function LoanOfferPage() {
   ];
 
   const handleSignAndContinue = () => {
-    // Navigate to next step
-    console.log("Sign and continue clicked");
+    navigate("/signing");
   };
 
   const handleContractPreview = () => {

@@ -14,6 +14,32 @@ import styles from "./IdentityVerificationPage.module.css";
 
 const AUTH_METHODS = ["Smart-ID", "Mobile-ID", "ID-card"];
 
+const validatePersonalCode = (code: string): string | undefined => {
+  if (!code.trim()) {
+    return undefined;
+  }
+  if (!/^\d+$/.test(code)) {
+    return "Personal ID code should contain only numbers";
+  }
+  if (code.length !== 11) {
+    return "Personal ID code must be exactly 11 digits";
+  }
+  return undefined;
+};
+
+const validatePhoneNumber = (phone: string): string | undefined => {
+  if (!phone.trim()) {
+    return undefined;
+  }
+  if (!/^\d+$/.test(phone)) {
+    return "Phone number should contain only numbers";
+  }
+  if (phone.length < 7 || phone.length > 8) {
+    return "Enter a valid Estonian mobile number";
+  }
+  return undefined;
+};
+
 export function IdentityVerificationPage() {
   const navigate = useNavigate();
   const { state, setAuthMethod, setPersonalIdCode } = useLoanFlow();
@@ -26,6 +52,23 @@ export function IdentityVerificationPage() {
   const [idCardType, setIdCardType] = useState("estonia");
   const [isVerifying, setIsVerifying] = useState(false);
   const [controlCode, setControlCode] = useState("");
+  const [touched, setTouched] = useState<{
+    personalCode?: boolean;
+    mobilePhone?: boolean;
+  }>({});
+
+  const personalCodeError = touched.personalCode
+    ? validatePersonalCode(personalCode)
+    : undefined;
+  const mobilePhoneError = touched.mobilePhone
+    ? validatePhoneNumber(mobilePhone)
+    : undefined;
+
+  const isFormValid =
+    personalCode.trim().length === 11 &&
+    !validatePersonalCode(personalCode) &&
+    (selectedMethod !== "Mobile-ID" ||
+      (mobilePhone.trim() && !validatePhoneNumber(mobilePhone)));
 
   const handleContinue = () => {
     setAuthMethod(selectedMethod);
@@ -73,6 +116,15 @@ export function IdentityVerificationPage() {
                   placeholder="12345678900"
                   value={personalCode}
                   onChange={(e) => setPersonalCode(e.target.value)}
+                  onBlur={() =>
+                    setTouched((prev) => ({ ...prev, personalCode: true }))
+                  }
+                  error={personalCodeError}
+                  helperText={
+                    !personalCodeError
+                      ? "Enter your 11-digit Estonian personal ID code"
+                      : undefined
+                  }
                   fullWidth
                 />
 
@@ -82,6 +134,15 @@ export function IdentityVerificationPage() {
                     placeholder="5551234"
                     value={mobilePhone}
                     onChange={(e) => setMobilePhone(e.target.value)}
+                    onBlur={() =>
+                      setTouched((prev) => ({ ...prev, mobilePhone: true }))
+                    }
+                    error={mobilePhoneError}
+                    helperText={
+                      !mobilePhoneError
+                        ? "Enter your Estonian mobile number without country code"
+                        : undefined
+                    }
                     prefix="+372"
                     fullWidth
                   />
@@ -117,10 +178,7 @@ export function IdentityVerificationPage() {
                   variant="filled"
                   fullWidth
                   onClick={handleContinue}
-                  disabled={
-                    !personalCode.trim() ||
-                    (selectedMethod === "Mobile-ID" && !mobilePhone.trim())
-                  }
+                  disabled={!isFormValid}
                 >
                   Continue
                 </Button>
