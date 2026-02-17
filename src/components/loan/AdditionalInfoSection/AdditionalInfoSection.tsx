@@ -48,6 +48,11 @@ export function AdditionalInfoSection({
             </Tooltip>
           }
           error={errors?.monthlyIncome}
+          helperText={
+            !errors?.monthlyIncome
+              ? "Your total monthly income after taxes"
+              : undefined
+          }
           fullWidth
         />
 
@@ -64,6 +69,11 @@ export function AdditionalInfoSection({
             </Tooltip>
           }
           error={errors?.monthlyObligations}
+          helperText={
+            !errors?.monthlyObligations
+              ? "Enter 0 if you have no existing obligations"
+              : undefined
+          }
           fullWidth
         />
       </div>

@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1771354810789" clover="3.2.0">
+  <project timestamp="1771354810789" name="All files">
+    <metrics statements="166" coveredstatements="142" conditionals="146" coveredconditionals="125" methods="72" coveredmethods="55" elements="384" coveredelements="322" complexity="0" loc="166" ncloc="166" packages="17" files="49" classes="49"/>
+    <package name="assets">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="inbank-logo-full.svg" path="/Users/rockgomes/Dev/Inbank/inbank-loan-app/src/assets/inbank-logo-full.svg">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="inbank-logo-small.svg" path="/Users/rockgomes/Dev/Inbank/inbank-loan-app/src/assets/inbank-logo-small.svg">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.layout.Header">
+      <metrics statements="15" coveredstatements="9" conditionals="8" coveredconditionals="5" methods="9" coveredmethods="4"/>
+      <file name="Header.module.css" path="/Users/rockgomes/Dev/Inbank/inbank-loan-app/src/components/layout/Header/Header.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Header.tsx" path="/Users/rockgomes/Dev/Inbank/inbank-loan-app/src/components/layout/Header/Header.tsx">
+        <metrics statements="15" coveredstatements="9" conditionals="8" coveredconditionals="5" methods="9" coveredmethods="4"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="37" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="37" type="stmt"/>
+        <line num="48" count="37" type="stmt"/>
+        <line num="49" count="37" type="stmt"/>
+        <line num="51" count="37" type="stmt"/>
+        <line num="52" count="0" type="stmt"/>
+        <line num="53" count="0" type="stmt"/>
+        <line num="56" count="37" type="stmt"/>
+        <line num="76" count="111" type="stmt"/>
+        <line num="79" count="0" type="stmt"/>
+        <line num="91" count="0" type="stmt"/>
+        <line num="101" count="0" type="stmt"/>
+        <line num="104" count="0" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/Users/rockgomes/Dev/Inbank/inbank-loan-app/src/components/layout/Header/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.layout.PageLayout">
+      <metrics statements="2" coveredstatements="2" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
+      <file name="PageLayout.module.css" path="/Users/rockgomes/Dev/Inbank/inbank-loan-app/src/components/layout/PageLayout/PageLayout.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="PageLayout.tsx" path="/Users/rockgomes/Dev/Inbank/inbank-loan-app/src/components/layout/PageLayout/PageLayout.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
+        <line num="16" count="37" type="stmt"/>
+        <line num="20" count="37" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/Users/rockgomes/Dev/Inbank/inbank-loan-app/src/components/layout/PageLayout/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.layout.PageTitle">
+      <metrics statements="2" coveredstatements="2" conditionals="6" coveredconditionals="5" methods="1" coveredmethods="1"/>
+      <file name="PageTitle.module.css" path="/Users/rockgomes/Dev/Inbank/inbank-loan-app/src/components/layout/PageTitle/PageTitle.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="PageTitle.tsx" path="/Users/rockgomes/Dev/Inbank/inbank-loan-app/src/components/layout/PageTitle/PageTitle.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="6" coveredconditionals="5" methods="1" coveredmethods="1"/>
+        <line num="17" count="37" type="stmt"/>
+        <line num="21" count="37" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/Users/rockgomes/Dev/Inbank/inbank-loan-app/src/components/layout/PageTitle/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.loan.AdditionalInfoSection">
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+      <file name="AdditionalInfoSection.module.css" path="/Users/rockgomes/Dev/Inbank/inbank-loan-app/src/components/loan/AdditionalInfoSection/AdditionalInfoSection.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="AdditionalInfoSection.tsx" path="/Users/rockgomes/Dev/Inbank/inbank-loan-app/src/components/loan/AdditionalInfoSection/AdditionalInfoSection.tsx">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="33" count="37" type="stmt"/>
+        <line num="42" count="12" type="stmt"/>
+        <line num="58" count="6" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/Users/rockgomes/Dev/Inbank/inbank-loan-app/src/components/loan/AdditionalInfoSection/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.loan.ComplianceCheckboxes">
+      <metrics statements="6" coveredstatements="5" conditionals="9" coveredconditionals="5" methods="4" coveredmethods="3"/>
+      <file name="ComplianceCheckboxes.module.css" path="/Users/rockgomes/Dev/Inbank/inbank-loan-app/src/components/loan/ComplianceCheckboxes/ComplianceCheckboxes.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="ComplianceCheckboxes.tsx" path="/Users/rockgomes/Dev/Inbank/inbank-loan-app/src/components/loan/ComplianceCheckboxes/ComplianceCheckboxes.tsx">
+        <metrics statements="6" coveredstatements="5" conditionals="9" coveredconditionals="5" methods="4" coveredmethods="3"/>
+        <line num="20" count="37" type="cond" truecount="1" falsecount="1"/>
+        <line num="21" count="37" type="cond" truecount="1" falsecount="1"/>
+        <line num="23" count="37" type="stmt"/>
+        <line num="29" count="2" type="stmt"/>
+        <line num="55" count="2" type="stmt"/>
+        <line num="68" count="0" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/Users/rockgomes/Dev/Inbank/inbank-loan-app/src/components/loan/ComplianceCheckboxes/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.loan.ContactDetailsCard">
+      <metrics statements="1" coveredstatements="1" conditionals="4" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <file name="ContactDetailsCard.module.css" path="/Users/rockgomes/Dev/Inbank/inbank-loan-app/src/components/loan/ContactDetailsCard/ContactDetailsCard.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="ContactDetailsCard.tsx" path="/Users/rockgomes/Dev/Inbank/inbank-loan-app/src/components/loan/ContactDetailsCard/ContactDetailsCard.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="4" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="22" count="37" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/Users/rockgomes/Dev/Inbank/inbank-loan-app/src/components/loan/ContactDetailsCard/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.ui.Alert">
+      <metrics statements="4" coveredstatements="1" conditionals="3" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <file name="Alert.module.css" path="/Users/rockgomes/Dev/Inbank/inbank-loan-app/src/components/ui/Alert/Alert.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Alert.tsx" path="/Users/rockgomes/Dev/Inbank/inbank-loan-app/src/components/ui/Alert/Alert.tsx">
+        <metrics statements="4" coveredstatements="1" conditionals="3" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/Users/rockgomes/Dev/Inbank/inbank-loan-app/src/components/ui/Alert/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.ui.Button">
+      <metrics statements="2" coveredstatements="2" conditionals="14" coveredconditionals="14" methods="1" coveredmethods="1"/>
+      <file name="Button.module.css" path="/Users/rockgomes/Dev/Inbank/inbank-loan-app/src/components/ui/Button/Button.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Button.tsx" path="/Users/rockgomes/Dev/Inbank/inbank-loan-app/src/components/ui/Button/Button.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="14" coveredconditionals="14" methods="1" coveredmethods="1"/>
+        <line num="27" count="50" type="stmt"/>
+        <line num="38" count="50" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/Users/rockgomes/Dev/Inbank/inbank-loan-app/src/components/ui/Button/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.ui.Card">
+      <metrics statements="2" coveredstatements="2" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
+      <file name="Card.module.css" path="/Users/rockgomes/Dev/Inbank/inbank-loan-app/src/components/ui/Card/Card.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Card.tsx" path="/Users/rockgomes/Dev/Inbank/inbank-loan-app/src/components/ui/Card/Card.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
+        <line num="24" count="37" type="stmt"/>
+        <line num="35" count="37" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/Users/rockgomes/Dev/Inbank/inbank-loan-app/src/components/ui/Card/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.ui.Checkbox">
+      <metrics statements="8" coveredstatements="8" conditionals="9" coveredconditionals="9" methods="2" coveredmethods="2"/>
+      <file name="Checkbox.module.css" path="/Users/rockgomes/Dev/Inbank/inbank-loan-app/src/components/ui/Checkbox/Checkbox.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Checkbox.tsx" path="/Users/rockgomes/Dev/Inbank/inbank-loan-app/src/components/ui/Checkbox/Checkbox.tsx">
+        <metrics statements="8" coveredstatements="8" conditionals="9" coveredconditionals="9" methods="2" coveredmethods="2"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="14" count="123" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
+        <line num="33" count="123" type="stmt"/>
+        <line num="34" count="123" type="cond" truecount="2" falsecount="0"/>
+        <line num="36" count="123" type="stmt"/>
+        <line num="45" count="123" type="stmt"/>
+        <line num="68" count="2" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/Users/rockgomes/Dev/Inbank/inbank-loan-app/src/components/ui/Checkbox/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.ui.Icon">
+      <metrics statements="24" coveredstatements="16" conditionals="5" coveredconditionals="4" methods="9" coveredmethods="3"/>
+      <file name="Icon.module.css" path="/Users/rockgomes/Dev/Inbank/inbank-loan-app/src/components/ui/Icon/Icon.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Icon.tsx" path="/Users/rockgomes/Dev/Inbank/inbank-loan-app/src/components/ui/Icon/Icon.tsx">
+        <metrics statements="8" coveredstatements="6" conditionals="5" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="42" count="111" type="stmt"/>
+        <line num="44" count="111" type="cond" truecount="1" falsecount="1"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="46" count="0" type="stmt"/>
+        <line num="49" count="111" type="stmt"/>
+        <line num="53" count="111" type="stmt"/>
+        <line num="58" count="111" type="stmt"/>
+      </file>
+      <file name="icons.tsx" path="/Users/rockgomes/Dev/Inbank/inbank-loan-app/src/components/ui/Icon/icons.tsx">
+        <metrics statements="16" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="37" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="52" count="1" type="stmt"/>
+        <line num="53" count="0" type="stmt"/>
+        <line num="69" count="1" type="stmt"/>
+        <line num="70" count="0" type="stmt"/>
+        <line num="85" count="1" type="stmt"/>
+        <line num="86" count="74" type="stmt"/>
+        <line num="102" count="1" type="stmt"/>
+        <line num="103" count="0" type="stmt"/>
+        <line num="117" count="1" type="stmt"/>
+        <line num="118" count="0" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/Users/rockgomes/Dev/Inbank/inbank-loan-app/src/components/ui/Icon/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.ui.InbankLogo">
+      <metrics statements="7" coveredstatements="5" conditionals="7" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <file name="InbankLogo.module.css" path="/Users/rockgomes/Dev/Inbank/inbank-loan-app/src/components/ui/InbankLogo/InbankLogo.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="InbankLogo.tsx" path="/Users/rockgomes/Dev/Inbank/inbank-loan-app/src/components/ui/InbankLogo/InbankLogo.tsx">
+        <metrics statements="7" coveredstatements="5" conditionals="7" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="19" count="37" type="stmt"/>
+        <line num="27" count="37" type="cond" truecount="1" falsecount="1"/>
+        <line num="29" count="37" type="cond" truecount="1" falsecount="1"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="42" count="37" type="cond" truecount="1" falsecount="1"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="55" count="37" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/Users/rockgomes/Dev/Inbank/inbank-loan-app/src/components/ui/InbankLogo/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.ui.TextField">
+      <metrics statements="9" coveredstatements="9" conditionals="30" coveredconditionals="30" methods="1" coveredmethods="1"/>
+      <file name="TextField.module.css" path="/Users/rockgomes/Dev/Inbank/inbank-loan-app/src/components/ui/TextField/TextField.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="TextField.tsx" path="/Users/rockgomes/Dev/Inbank/inbank-loan-app/src/components/ui/TextField/TextField.tsx">
+        <metrics statements="9" coveredstatements="9" conditionals="30" coveredconditionals="30" methods="1" coveredmethods="1"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="33" count="90" type="stmt"/>
+        <line num="34" count="90" type="cond" truecount="2" falsecount="0"/>
+        <line num="36" count="90" type="stmt"/>
+        <line num="37" count="90" type="cond" truecount="2" falsecount="0"/>
+        <line num="39" count="90" type="stmt"/>
+        <line num="47" count="90" type="stmt"/>
+        <line num="57" count="90" type="stmt"/>
+        <line num="94" count="2" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/Users/rockgomes/Dev/Inbank/inbank-loan-app/src/components/ui/TextField/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.ui.Tooltip">
+      <metrics statements="5" coveredstatements="5" conditionals="3" coveredconditionals="2" methods="4" coveredmethods="1"/>
+      <file name="Tooltip.module.css" path="/Users/rockgomes/Dev/Inbank/inbank-loan-app/src/components/ui/Tooltip/Tooltip.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Tooltip.tsx" path="/Users/rockgomes/Dev/Inbank/inbank-loan-app/src/components/ui/Tooltip/Tooltip.tsx">
+        <metrics statements="5" coveredstatements="5" conditionals="3" coveredconditionals="2" methods="4" coveredmethods="1"/>
+        <line num="11" count="74" type="stmt"/>
+        <line num="13" count="74" type="stmt"/>
+        <line num="14" count="74" type="stmt"/>
+        <line num="15" count="74" type="stmt"/>
+        <line num="17" count="74" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/Users/rockgomes/Dev/Inbank/inbank-loan-app/src/components/ui/Tooltip/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="contexts">
+      <metrics statements="26" coveredstatements="26" conditionals="2" coveredconditionals="2" methods="19" coveredmethods="19"/>
+      <file name="LoanFlowContext.tsx" path="/Users/rockgomes/Dev/Inbank/inbank-loan-app/src/contexts/LoanFlowContext.tsx">
+        <metrics statements="26" coveredstatements="26" conditionals="2" coveredconditionals="2" methods="19" coveredmethods="19"/>
+        <line num="42" count="2" type="stmt"/>
+        <line num="53" count="2" type="stmt"/>
+        <line num="58" count="30" type="stmt"/>
+        <line num="60" count="30" type="stmt"/>
+        <line num="61" count="1" type="stmt"/>
+        <line num="64" count="30" type="stmt"/>
+        <line num="65" count="2" type="stmt"/>
+        <line num="68" count="30" type="stmt"/>
+        <line num="69" count="2" type="stmt"/>
+        <line num="72" count="30" type="stmt"/>
+        <line num="73" count="1" type="stmt"/>
+        <line num="76" count="30" type="stmt"/>
+        <line num="77" count="2" type="stmt"/>
+        <line num="80" count="30" type="stmt"/>
+        <line num="83" count="2" type="stmt"/>
+        <line num="86" count="30" type="stmt"/>
+        <line num="87" count="2" type="stmt"/>
+        <line num="90" count="30" type="stmt"/>
+        <line num="91" count="1" type="stmt"/>
+        <line num="94" count="30" type="stmt"/>
+        <line num="95" count="1" type="stmt"/>
+        <line num="98" count="30" type="stmt"/>
+        <line num="119" count="59" type="stmt"/>
+        <line num="120" count="59" type="cond" truecount="2" falsecount="0"/>
+        <line num="121" count="2" type="stmt"/>
+        <line num="123" count="57" type="stmt"/>
+      </file>
+    </package>
+    <package name="pages.PersonalDetailsPage">
+      <metrics statements="48" coveredstatements="44" conditionals="37" coveredconditionals="34" methods="13" coveredmethods="13"/>
+      <file name="PersonalDetailsPage.module.css" path="/Users/rockgomes/Dev/Inbank/inbank-loan-app/src/pages/PersonalDetailsPage/PersonalDetailsPage.module.css">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="PersonalDetailsPage.tsx" path="/Users/rockgomes/Dev/Inbank/inbank-loan-app/src/pages/PersonalDetailsPage/PersonalDetailsPage.tsx">
+        <metrics statements="48" coveredstatements="44" conditionals="37" coveredconditionals="34" methods="13" coveredmethods="13"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="22" count="37" type="stmt"/>
+        <line num="23" count="37" type="stmt"/>
+        <line num="25" count="37" type="stmt"/>
+        <line num="28" count="37" type="stmt"/>
+        <line num="31" count="37" type="stmt"/>
+        <line num="37" count="37" type="stmt"/>
+        <line num="41" count="37" type="stmt"/>
+        <line num="42" count="37" type="stmt"/>
+        <line num="47" count="37" type="stmt"/>
+        <line num="51" count="81" type="cond" truecount="2" falsecount="0"/>
+        <line num="52" count="33" type="cond" truecount="2" falsecount="0"/>
+        <line num="56" count="48" type="cond" truecount="4" falsecount="0"/>
+        <line num="57" count="6" type="stmt"/>
+        <line num="59" count="42" type="stmt"/>
+        <line num="62" count="37" type="stmt"/>
+        <line num="63" count="3" type="stmt"/>
+        <line num="64" count="3" type="stmt"/>
+        <line num="65" count="3" type="stmt"/>
+        <line num="68" count="37" type="stmt"/>
+        <line num="69" count="2" type="stmt"/>
+        <line num="70" count="2" type="stmt"/>
+        <line num="74" count="2" type="stmt"/>
+        <line num="77" count="37" type="stmt"/>
+        <line num="81" count="4" type="stmt"/>
+        <line num="82" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="83" count="0" type="stmt"/>
+        <line num="87" count="37" type="stmt"/>
+        <line num="88" count="37" type="stmt"/>
+        <line num="89" count="37" type="stmt"/>
+        <line num="94" count="37" type="cond" truecount="2" falsecount="0"/>
+        <line num="96" count="37" type="cond" truecount="3" falsecount="0"/>
+        <line num="99" count="37" type="stmt"/>
+        <line num="100" count="1" type="stmt"/>
+        <line num="101" count="1" type="stmt"/>
+        <line num="106" count="1" type="stmt"/>
+        <line num="110" count="1" type="stmt"/>
+        <line num="115" count="1" type="cond" truecount="3" falsecount="1"/>
+        <line num="116" count="0" type="stmt"/>
+        <line num="117" count="0" type="stmt"/>
+        <line num="120" count="1" type="cond" truecount="3" falsecount="1"/>
+        <line num="121" count="0" type="stmt"/>
+        <line num="124" count="1" type="stmt"/>
+        <line num="129" count="1" type="stmt"/>
+        <line num="131" count="1" type="stmt"/>
+        <line num="134" count="37" type="stmt"/>
+        <line num="135" count="1" type="stmt"/>
+        <line num="138" count="37" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/Users/rockgomes/Dev/Inbank/inbank-loan-app/src/pages/PersonalDetailsPage/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+  </project>
+</coverage>

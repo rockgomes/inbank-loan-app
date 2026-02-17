@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
+import { expect, fn, userEvent, within } from "storybook/test";
 import { Button } from "./Button";
 
 const EditIcon = () => (
@@ -74,6 +75,15 @@ export const Filled: Story = {
   args: {
     variant: "filled",
     children: "Continue",
+    onClick: fn(),
+  },
+  play: async ({ canvasElement, args }) => {
+    const canvas = within(canvasElement);
+    const button = canvas.getByRole("button", { name: "Continue" });
+
+    await userEvent.click(button);
+
+    await expect(args.onClick).toHaveBeenCalledTimes(1);
   },
 };
 
@@ -105,6 +115,17 @@ export const Disabled: Story = {
     variant: "filled",
     children: "Confirm and continue",
     disabled: true,
+    onClick: fn(),
+  },
+  play: async ({ canvasElement, args }) => {
+    const canvas = within(canvasElement);
+    const button = canvas.getByRole("button");
+
+    await expect(button).toBeDisabled();
+
+    await userEvent.click(button);
+
+    await expect(args.onClick).not.toHaveBeenCalled();
   },
 };
 
