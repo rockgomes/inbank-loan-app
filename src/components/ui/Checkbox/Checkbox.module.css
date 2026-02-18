@@ -79,3 +79,8 @@
 .disabled .label {
   cursor: not-allowed;
 }
+
+.required {
+  color: var(--color-status-error);
+  font-weight: var(--font-weight-medium);
+}

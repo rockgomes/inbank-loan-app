@@ -86,4 +86,30 @@ describe("Checkbox", () => {
     await user.click(screen.getByText("Toggle me"));
     expect(handleChange).toHaveBeenCalledTimes(1);
   });
+
+  it("renders asterisk when required is true", () => {
+    render(<Checkbox label="Accept terms" required />);
+    expect(screen.getByText("*")).toBeInTheDocument();
+  });
+
+  it("does not render asterisk when required is false", () => {
+    render(<Checkbox label="Accept terms" />);
+    expect(screen.queryByText("*")).not.toBeInTheDocument();
+  });
+
+  it("sets aria-required attribute when required is true", () => {
+    render(<Checkbox label="Accept terms" required />);
+    expect(screen.getByRole("checkbox")).toHaveAttribute(
+      "aria-required",
+      "true",
+    );
+  });
+
+  it("does not set aria-required when required is false", () => {
+    render(<Checkbox label="Accept terms" />);
+    expect(screen.getByRole("checkbox")).toHaveAttribute(
+      "aria-required",
+      "false",
+    );
+  });
 });
