@@ -1,6 +1,6 @@
-import { Checkbox } from '../../ui/Checkbox';
-import { Alert } from '../../ui/Alert';
-import styles from './ComplianceCheckboxes.module.css';
+import { Checkbox } from "../../ui/Checkbox";
+import { Alert } from "../../ui/Alert";
+import styles from "./ComplianceCheckboxes.module.css";
 
 export interface ComplianceCheckboxesProps {
   values: {
@@ -8,7 +8,10 @@ export interface ComplianceCheckboxesProps {
     termsAccepted: boolean;
     marketingConsent: boolean;
   };
-  onChange: (field: keyof ComplianceCheckboxesProps['values'], value: boolean) => void;
+  onChange: (
+    field: keyof ComplianceCheckboxesProps["values"],
+    value: boolean,
+  ) => void;
   showErrors?: boolean;
 }
 
@@ -22,16 +25,20 @@ export function ComplianceCheckboxes({
 
   return (
     <div className={styles.container}>
+      <p className={styles.instruction}>* Required fields</p>
+
       <div className={styles.checkboxGroup}>
         <Checkbox
           label="No one else has influenced me to apply for credit."
           checked={values.noInfluence}
-          onChange={(e) => onChange('noInfluence', e.target.checked)}
+          onChange={(e) => onChange("noInfluence", e.target.checked)}
           error={showNoInfluenceError}
+          required
         />
         {showNoInfluenceError && (
           <Alert variant="error" className={styles.alert}>
-            To continue with the application, confirm that no one has influenced you to apply for credit.
+            To continue with the application, confirm that no one has influenced
+            you to apply for credit.
           </Alert>
         )}
       </div>
@@ -40,7 +47,7 @@ export function ComplianceCheckboxes({
         <Checkbox
           label={
             <>
-              I have read and accept the{' '}
+              I have read and accept the{" "}
               <a
                 href="https://inbank.ee/terms"
                 target="_blank"
@@ -52,8 +59,9 @@ export function ComplianceCheckboxes({
             </>
           }
           checked={values.termsAccepted}
-          onChange={(e) => onChange('termsAccepted', e.target.checked)}
+          onChange={(e) => onChange("termsAccepted", e.target.checked)}
           error={showTermsError}
+          required
         />
         {showTermsError && (
           <Alert variant="error" className={styles.alert}>
@@ -63,13 +71,15 @@ export function ComplianceCheckboxes({
       </div>
 
       <Checkbox
-        label="I want to receive news and offers from Inbank and partners."
+        label="I want to receive news and offers from Inbank and partners. (optional)"
         checked={values.marketingConsent}
-        onChange={(e) => onChange('marketingConsent', e.target.checked)}
+        onChange={(e) => onChange("marketingConsent", e.target.checked)}
       />
 
       <p className={styles.disclaimer}>
-        By continuing, I confirm that I allow AS Inbank Finance to request information about my gross income from AS Pensionikeskus pension registry for the purpose of making a credit decision.
+        By continuing, I confirm that I allow AS Inbank Finance to request
+        information about my gross income from AS Pensionikeskus pension
+        registry for the purpose of making a credit decision.
       </p>
     </div>
   );

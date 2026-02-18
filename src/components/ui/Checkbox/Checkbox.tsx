@@ -8,6 +8,7 @@ export interface CheckboxProps extends Omit<
 > {
   label?: ReactNode;
   error?: boolean;
+  required?: boolean;
 }
 
 const CheckIcon = () => (
@@ -27,7 +28,15 @@ const CheckIcon = () => (
 
 export const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(
   (
-    { label, error = false, className, id: providedId, disabled, ...props },
+    {
+      label,
+      error = false,
+      required = false,
+      className,
+      id: providedId,
+      disabled,
+      ...props
+    },
     ref,
   ) => {
     const generatedId = useId();
@@ -50,6 +59,7 @@ export const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(
           id={id}
           className={styles.input}
           disabled={disabled}
+          aria-required={required}
           {...props}
         />
         <label htmlFor={id} className={styles.checkmark}>
@@ -58,6 +68,12 @@ export const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(
         {label && (
           <label htmlFor={id} className={styles.label}>
             {label}
+            {required && (
+              <span className={styles.required} aria-hidden="true">
+                {" "}
+                *
+              </span>
+            )}
           </label>
         )}
       </div>

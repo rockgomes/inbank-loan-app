@@ -6,6 +6,15 @@
   width: 100%;
 }
 
+.instruction {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-xs);
+  color: var(--color-grey-2);
+  margin: 0 0 var(--spacing-xs) 0;
+}
+
 .checkboxGroup {
   display: flex;
   flex-direction: column;
