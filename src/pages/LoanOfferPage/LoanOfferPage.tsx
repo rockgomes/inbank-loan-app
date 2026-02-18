@@ -40,10 +40,6 @@ export function LoanOfferPage() {
     navigate("/");
   };
 
-  const handleBack = () => {
-    navigate("/decision");
-  };
-
   return (
     <PageLayout>
       <div className={styles.content}>
@@ -95,11 +91,6 @@ export function LoanOfferPage() {
           >
             <Icon name="x" size="sm" />
             <span>Cancel application</span>
-          </button>
-
-          <button className={styles.backLink} onClick={handleBack}>
-            <Icon name="arrow-left" size="sm" />
-            <span>Back to overview</span>
           </button>
 
           <div className={styles.disclaimers}>

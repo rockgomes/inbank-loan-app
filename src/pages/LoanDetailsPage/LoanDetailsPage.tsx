@@ -6,7 +6,6 @@ import { LoanSummaryCard } from "../../components/loan/LoanSummaryCard";
 import { OrderInfoSection } from "../../components/loan/OrderInfoSection";
 import { LegalConsent } from "../../components/loan/LegalConsent";
 import { Button } from "../../components/ui/Button";
-import { Icon } from "../../components/ui/Icon";
 import styles from "./LoanDetailsPage.module.css";
 import { Card } from "../../components";
 
@@ -43,10 +42,6 @@ export function LoanDetailsPage() {
     navigate("/identity");
   };
 
-  const handleBackToOverview = () => {
-    console.log("Back to overview clicked");
-  };
-
   return (
     <PageLayout>
       <div className={styles.content}>
@@ -80,11 +75,6 @@ export function LoanDetailsPage() {
         </Card>
 
         <div className={styles.footer}>
-          <button className={styles.backLink} onClick={handleBackToOverview}>
-            <Icon name="arrow-left" size="sm" />
-            <span>Back to overview</span>
-          </button>
-
           <div className={styles.disclaimers}>
             <p className={styles.disclaimer}>
               The financial service is offered by AS Inbank. Before signing the
