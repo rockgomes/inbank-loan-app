@@ -3,6 +3,8 @@
   flex-direction: column;
   gap: var(--spacing-xl);
   width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
 }
 
 .footer {
