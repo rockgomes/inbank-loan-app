@@ -37,3 +37,9 @@
 .editButton {
   margin-top: var(--spacing-sm);
 }
+
+@media (max-width: 767px) {
+  .container {
+    padding: var(--spacing-lg);
+  }
+}

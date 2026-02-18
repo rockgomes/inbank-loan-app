@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { InbankLogo } from "../../ui/InbankLogo";
 import styles from "./Header.module.css";
 
@@ -45,12 +46,17 @@ export function Header({
   onLanguageChange,
   phoneNumber = "640 8080",
 }: HeaderProps) {
+  const navigate = useNavigate();
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const languages: Language[] = ["ET", "RU", "EN"];
 
   const handleLanguageSelect = (language: Language) => {
     onLanguageChange?.(language);
     setIsDropdownOpen(false);
+  };
+
+  const handleLogoClick = () => {
+    navigate("/");
   };
 
   return (
@@ -64,7 +70,11 @@ export function Header({
         </div>
 
         {/* Center: Logo */}
-        <div className={styles.logo}>
+        <div
+          className={styles.logo}
+          onClick={handleLogoClick}
+          style={{ cursor: "pointer" }}
+        >
           <InbankLogo variant="responsive" />
         </div>
 

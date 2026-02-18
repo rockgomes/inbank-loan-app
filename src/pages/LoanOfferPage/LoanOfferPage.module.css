@@ -132,6 +132,7 @@
   .detailsGrid {
     grid-template-columns: 1fr;
     gap: var(--spacing-lg);
+    padding-left: var(--spacing-lg);
   }
 
   .contractSection {

@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { PageLayout } from "../../components/layout/PageLayout";
 import { PageTitle } from "../../components/layout/PageTitle";
 import { Card } from "../../components/ui/Card";
@@ -9,12 +10,14 @@ const illustrationImage =
   "https://www.figma.com/api/mcp/asset/96eed0cf-1345-4462-b876-250d23ae6b06";
 
 export function CompletionPage() {
+  const navigate = useNavigate();
+
   const handleDownloadContract = () => {
     // Placeholder - no action needed for now
   };
 
   const handleBackToMerchant = () => {
-    // Placeholder - no action needed for now
+    navigate("/");
   };
 
   return (
